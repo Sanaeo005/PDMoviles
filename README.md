@@ -1,15 +1,7 @@
-# Tarea 01 - Programación de Dispositivos Móviles
+# Programación de Dispositivos Móviles
 
-Proyecto realizado para Programación de Dispositivos Móviles
+Repositorio de tareas y prácticas de Programación de Dispositivos Móviles.
 
-## Proyecto
+## Tareas
 
-Aplicación Android desarrollada en Android Studio.
-
-## Lenguaje
-
-Java.
-
-## Autor
-
-Rafael Esteban Carrillo Sánchez
+- [Tarea 1](Tarea1/)

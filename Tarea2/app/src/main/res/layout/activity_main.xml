@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#141824">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CINEMAPP"
+            android:textColor="#E8BD6A"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARTELERA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu película"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/ready_poster"
+                android:contentDescription="Ready Player One"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/swing_poster"
+                android:contentDescription="Swing Girls"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/evil_poster"
+                android:contentDescription="Evil Dead"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/grupoPeliculas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/pelicula1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ready Player One"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/pelicula2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swing Girls"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/pelicula3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Evil Dead"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUAR"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

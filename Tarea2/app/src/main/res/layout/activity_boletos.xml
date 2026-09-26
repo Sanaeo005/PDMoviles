@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#141824">
+
+    <LinearLayout
+        android:id="@+id/mainBoletos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CINEAPP"
+            android:textColor="#E8BD6A"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPRA DE BOLETOS"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Nombre del cliente -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del cliente"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu nombre"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB2C0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Selección del horario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu horario"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/grupoHorarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/horario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A" />
+
+            <RadioButton
+                android:id="@+id/horario2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:30"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A" />
+
+            <RadioButton
+                android:id="@+id/horario3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21:00"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A" />
+
+        </RadioGroup>
+
+        <!-- Tipo de boleto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de boleto"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/grupoBoletos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/boletoAdulto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adulto"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A" />
+
+            <RadioButton
+                android:id="@+id/boletoEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estudiante"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E8BD6A" />
+
+        </RadioGroup>
+
+        <!-- Complementos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complementos"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkPalomitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Palomitas"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#E8BD6A" />
+
+        <CheckBox
+            android:id="@+id/checkRefresco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresco"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#E8BD6A" />
+
+        <CheckBox
+            android:id="@+id/checkNachos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nachos"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#E8BD6A" />
+
+        <!-- Confirmación -->
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR PEDIDO"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
